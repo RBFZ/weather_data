@@ -3,6 +3,7 @@ This is a simple Python application that allows you to check the current weather
 
 How It Works:
 Enter the name of a city, a state code (if applicable), and a country code in the provided text fields.
+
 Click the corresponding buttons to input your city, state, and country information.
 After entering your information, click the "Obtain Weather Data" button to fetch the weather data for the specified location.
 The application will display the weather condition and temperature for the specified location.
