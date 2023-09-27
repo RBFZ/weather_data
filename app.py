@@ -62,9 +62,9 @@ country.pack()
 #API requests start
 api_key = '2e1d1ddaedaef757e4645cf039f06d58'
 
-city_input = city_entry.get('1.0','end').strip().lower()
-state_input = state_entry.get('1.0','end').strip().lower()
-country_input = country_entry.get('1.0','end').strip().lower()
+city_input = city_entry.get('1.0','end').lower()
+state_input = state_entry.get('1.0','end').lower()
+country_input = country_entry.get('1.0','end').lower()
 
 get_location = requests.get(
     f"http://api.openweathermap.org/geo/1.0/direct?q={city_input},{state_input},{country_input}&limit={1}&appid={api_key}"
@@ -114,11 +114,11 @@ get_weather_button.pack()
 #put lat and lon into request to get weather data
 
 #new window for this
-cityname = city_entry.get('1.0','end').strip()
+cityname = city_entry.get('1.0','end')
 
 def print_weather_Click():
     global cityname
-    cityname = city_entry.get('1.0','end').strip()
+    cityname = city_entry.get('1.0','end')
     if weather == 'Clouds':
         root.after(1000,lambda : _show(f"Weather for {cityname}",  f"The skies in {cityname} are a bit shady with some {weather} in the skies.\nThe temperature in {cityname} is {temp} degrees"))
         #print(f"The weather in {city} is a bit shady with some {weather} in the skies.")
