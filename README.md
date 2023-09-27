@@ -1,5 +1,5 @@
 # weather_data
-This is a simple Python application that allows you to check the current weather for a specific location using the OpenWeatherMap API. It utilizes the tkinter library for creating a graphical user interface (GUI) and the requests library for making API requests to obtain weather data.
+This is a simple Python application that allows you to check the current weather/temperature for a specific location using the OpenWeatherMap API. It utilizes the tkinter library for creating a graphical user interface (GUI) and the requests library for making API requests to obtain weather data.
 
 How It Works:
 1. Enter the name of a city, a state code (if applicable), and a country code in the provided text fields.
