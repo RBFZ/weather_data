@@ -5,11 +5,11 @@ How It Works:
 1. Enter the name of a city, a state code (if applicable), and a country code in the provided text fields.
 2. Click the corresponding buttons to input your city, state, and country information.
 3. After entering your information, click the "Obtain Weather Data" button to fetch the weather data for the specified location.
-The application will display the weather condition and temperature for the specified location.
-You can close the application after viewing the weather data.
+4. The application will display the weather condition and temperature for the specified location.
+5. You can close the application after viewing the weather data.
 
 Technologies Used:
-Python (Tkinter for GUI)
-Requests library for making API requests to OpenWeatherMap
-OpenWeatherMap API for weather data
+* Python (Tkinter for GUI)
+* Requests library for making API requests to OpenWeatherMap
+* OpenWeatherMap API for weather data
 
