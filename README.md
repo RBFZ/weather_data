@@ -1,2 +1,15 @@
 # weather_data
-Creates a way to obtain the weather data and temperature of a location. Obtains latitude longitude which is obtained from input through the an api. Then provides the weather and temperature date through the latitude and longitude.
+This is a simple Python application that allows you to check the current weather for a specific location using the OpenWeatherMap API. It utilizes the tkinter library for creating a graphical user interface (GUI) and the requests library for making API requests to obtain weather data.
+
+How It Works:
+1. Enter the name of a city, a state code (if applicable), and a country code in the provided text fields.
+2. Click the corresponding buttons to input your city, state, and country information.
+3. After entering your information, click the "Obtain Weather Data" button to fetch the weather data for the specified location.
+4. The application will display the weather condition and temperature for the specified location.
+5. You can close the application after viewing the weather data.
+
+Technologies Used:
+* Python (Tkinter for GUI)
+* Requests library for making API requests to OpenWeatherMap
+* OpenWeatherMap API for weather data
+
