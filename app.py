@@ -1,6 +1,5 @@
 from tkinter import *
 from tkmacosx import Button
-from PIL import ImageTk, Image
 import requests #library needed
 from time import sleep #delay to ouput
 from tkinter.messagebox import _show
@@ -12,7 +11,7 @@ root.geometry("800x600")
     
 
 #background image
-bg = ImageTk.PhotoImage(file="images/cloud_bg.png")
+bg = PhotoImage(file="images/cloud_bg.png")
 
 my_label = Label(root, image=bg)
 my_label.place(x=0, y=0, relwidth=1, relheight=1)
@@ -140,7 +139,7 @@ def print_weather_Click():
     global cityname
     cityname = city_entry.get('1.0','end')
     if weather == 'Clouds':
-        root.after(1000,lambda : _show(f"Weather for {cityname}",  f"The skies in {cityname} are a bit shady with some {weather} in the skies.\nThe temperature in {cityname} is {temp} degrees"))
+        root.after(1000,lambda : _show(f"Weather for {cityname}",  f"It's a bit shady in {cityname} with some {weather} in the skies.\nThe temperature in {cityname} is {temp} degrees"))
     elif weather == 'Clear':
         root.after(1000,lambda : _show(f"Weather for {cityname}",  f"The weather in {cityname} might get sunny during the day with {weather} skies.\nThe temperature in {cityname} is {temp} degrees"))
     elif weather == 'Rain':
